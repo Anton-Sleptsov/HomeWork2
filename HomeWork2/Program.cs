@@ -39,6 +39,12 @@
 
                 if (operatorInString == "√")
                 {
+                    if(operatorIndex != 0)
+                    {
+                        ShowErrorMessage("неверный формат ввода!");
+                        continue;
+                    }
+
                     string numberInString = input.Substring(operatorIndex + 1);
 
                     try
